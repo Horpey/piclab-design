@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./styles.module.scss";
+import styles from "./styles.module.css";
 
 import TextTag from "../../components/TextTag";
 import { RichText } from "prismic-reactjs";
@@ -54,9 +54,9 @@ const AiSection = ({ data }) => {
                     height={89}
                   />
                 </div>
-                <p className="text-gray-500">
+                <div className="text-gray-500">
                   {RichText.render(data["ai_description"])}
-                </p>
+                </div>
               </div>
             </div>
           </div>
