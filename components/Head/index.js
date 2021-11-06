@@ -20,6 +20,9 @@ const HeadShare = (props) => {
         <link rel="shortcut icon" href={METADATA.FAVICON}></link>
         <meta name="description" content={METADATA.APP_DESCRIPTION} />
         <meta content={METADATA.KEY_WORDS} name="keywords" />
+
+        {/* Font */}
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
       </Head>
     </>
   );

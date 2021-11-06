@@ -1,5 +1,3 @@
-// import "../css/tailwind.css";
-// import "../css/base.css";
 import "../styles/global.scss";
 
 function MyApp({ Component, pageProps }) {
