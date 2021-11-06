@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./styles.module.css";
+import styles from "../../styles/AiSection.module.css";
 
 import TextTag from "../../components/TextTag";
 import { RichText } from "prismic-reactjs";
