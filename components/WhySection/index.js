@@ -2,7 +2,7 @@ import { RichText } from "prismic-reactjs";
 
 const WhySection = ({ data }) => {
   return (
-    <div className="why-section">
+    <div className="whySection">
       <div className={`headerSection pt-20`}>
         <div className="mx-auto pl-4 sm:pl-6 lg:pl-16">
           <div>
