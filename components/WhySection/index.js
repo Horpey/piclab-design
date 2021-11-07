@@ -1,4 +1,5 @@
 import { RichText } from "prismic-reactjs";
+import Image from "next/image";
 
 const WhySection = ({ data }) => {
   return (
@@ -34,9 +35,24 @@ const WhySection = ({ data }) => {
                     </div>
 
                     <div
-                      className={`text-center px-2 pb-2 absolute bottom-0 whyCardImg`}
+                      className={`text-center px-2 pb-2 absolute bottom-0 whyCardImg w-full`}
                     >
-                      <span>{RichText.render(item.image)}</span>
+                      {/* <span>{RichText.render(item.image)}</span> */}
+                      <div
+                        className=""
+                        style={{
+                          width: "100%",
+                          height: "290px",
+                          position: "relative",
+                        }}
+                      >
+                        <Image
+                          src="/images/whyimg.png"
+                          alt="why"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
