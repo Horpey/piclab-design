@@ -1,6 +1,7 @@
 import Head from "../components/Head";
 import Slice from "../components/Slices";
 import EmailSignInTab from "../components/EmailSignInTab";
+import { useEffect } from "react";
 
 import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
@@ -13,6 +14,10 @@ export default function Home({ homepage }) {
     { title: "piclab news", type: "news", key: "news" },
     { title: "get started", type: "getstarted", key: "getstarted" },
   ];
+
+  useEffect(() => {
+    document.querySelector("body").classList.add("home");
+  });
 
   return (
     <>

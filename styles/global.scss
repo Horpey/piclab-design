@@ -15,8 +15,8 @@ input,
 button {
   font-family: "Inter", sans-serif;
 }
-body {
-  margin: 0 !important;
+body.home {
+  margin: 0px !important;
 }
 .headerStyle {
   .headerSection {
@@ -131,6 +131,13 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
   }
+
+  .whyCardImg {
+    p img {
+      border-radius: 8px !important;
+      width: 100% !important;
+    }
+  }
   .hideScrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -139,11 +146,5 @@ body {
   .hideScrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-  }
-}
-.imgInRoundWhy {
-  p img {
-    border-radius: 8px !important;
-    width: 100% !important;
   }
 }

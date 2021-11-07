@@ -25,7 +25,7 @@ const WhySection = ({ data }) => {
                       <p className={`text-gray-400 text-xs mb-5`}>
                         {RichText.render(item.label)}
                       </p>
-                      <h1 className={`text-2xl mb-4  `}>
+                      <h1 className={`text-2xl mb-4`}>
                         {RichText.render(item.heading)}
                       </h1>
                       <div className={`text-gray-500`}>
@@ -34,9 +34,9 @@ const WhySection = ({ data }) => {
                     </div>
 
                     <div
-                      className={`text-center px-2 pb-2 absolute bottom-0 imgInRoundWhy`}
+                      className={`text-center px-2 pb-2 absolute bottom-0 whyCardImg`}
                     >
-                      {RichText.render(item.image)}
+                      <span>{RichText.render(item.image)}</span>
                     </div>
                   </div>
                 </div>
