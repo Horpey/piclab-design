@@ -35,7 +35,7 @@ const Header = ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className="md:w-8/12 relative">
+            <div className="md:w-8/12 relative hidden md:block">
               <div className="">
                 <div
                   className="-mr-3.5"

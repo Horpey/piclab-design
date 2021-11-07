@@ -9,7 +9,7 @@ const AiSection = ({ data }) => {
       <div className={`headerSection flex items-center`}>
         <div className="w-11/12 pl-4 sm:pl-6 lg:pl-16">
           <div className="flex flex-col md:flex-row ">
-            <div className="md:w-8/12 relative">
+            <div className="md:w-8/12 relative hidden md:block">
               <div>
                 <TextTag className={`absolute headertag1`} text="Person" />
                 <TextTag className={`absolute headertag2`} text="Desk" />
@@ -21,11 +21,11 @@ const AiSection = ({ data }) => {
             </div>
             <div className="md:w-4/12">
               <div className="md:w-5/6 float-right">
-                <div className="bg-white shadow-lg rounded-lg md:p-8">
+                <div className="bg-white shadow-lg rounded-lg md:p-8 p-5">
                   <p className="text-gray-400 text-xs mb-5">
                     {RichText.render(data["ai_label"])}
                   </p>
-                  <h1 className="text-3xl">
+                  <h1 className="text-2xl">
                     {RichText.render(data["ai_heading"])}
                   </h1>
                   <div className="text-center py-20">

@@ -6,10 +6,10 @@ export default function EmailSignInTab() {
     <div className="fixed bottom-1 w-full">
       <div className="p-4">
         <div className="bg-white p-3 flex flex-col justify-center md:items-center sm:flex-row sm:items-start rounded-lg">
-          <div className="mb-12 sm:mb-0 sm:w-1/3">
+          <div className="mb-0 sm:mb-0 sm:w-1/3">
             <EmailInput />
           </div>
-          <div className="mb-12 sm:mb-0 sm:w-1/3">
+          <div className="mb-12 sm:mb-0 sm:w-1/3 hidden md:block">
             <div className="text-center">
               <Image
                 src="/images/icons/piclab.png"
@@ -19,7 +19,7 @@ export default function EmailSignInTab() {
               />
             </div>
           </div>
-          <div className="mb-12 sm:mb-0 sm:w-1/3">
+          <div className="mb-12 sm:mb-0 sm:w-1/3 hidden md:block">
             <div className="text-right">
               <button
                 type="submit"

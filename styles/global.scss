@@ -126,13 +126,18 @@ body.home {
     white-space: normal;
   }
   .scrollCard {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border: 0;
     flex-grow: 0;
     flex-shrink: 0;
   }
 
   .whyCardImg {
+    .imagePlace {
+      width: 100%;
+      height: 290px;
+      position: relative;
+    }
     p img,
     span img {
       border-radius: 8px !important;
@@ -147,5 +152,11 @@ body.home {
   .hideScrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .whySection .whyCardImg .imagePlace {
+    height: 200px !important;
   }
 }
