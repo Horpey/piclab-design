@@ -34,7 +34,7 @@ const WhySection = ({ data }) => {
                     </div>
 
                     <div
-                      className={`text-center px-2 pb-2 absolute bottom-0 imgInRound`}
+                      className={`text-center px-2 pb-2 absolute bottom-0 imgInRoundWhy`}
                     >
                       {RichText.render(item.image)}
                     </div>

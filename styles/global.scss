@@ -122,12 +122,6 @@ body {
   .whyCard {
     min-height: 581px;
   }
-  .imgInRound {
-    p img {
-      border-radius: 8px !important;
-      width: 100% !important;
-    }
-  }
   .whitespaceBreak {
     white-space: normal;
   }
@@ -145,5 +139,11 @@ body {
   .hideScrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+}
+.imgInRoundWhy {
+  p img {
+    border-radius: 8px !important;
+    width: 100% !important;
   }
 }

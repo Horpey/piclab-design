@@ -36,7 +36,7 @@ const NewsSection = ({ data }) => {
                       }
                     >
                       <div className="uppercase text-white opacity-40 w-6/12">
-                        {HumanizeDate(ParseDate(item.date))}
+                        <span>{HumanizeDate(ParseDate(item.date))}</span>
                       </div>
                       <h3 className="text-white text-2xl underline w-6/12">
                         {RichText.render(item.title)}
