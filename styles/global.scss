@@ -1,6 +1,23 @@
 @import "./tailwind/base.scss";
 @import "./tailwind/tailwind.scss";
 @import "./idleWild.scss";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0;
+}
 .headerStyle {
   .headerSection {
     background: linear-gradient(305.47deg, #e14551 46.87%, #ff75b7 129.51%);
@@ -37,5 +54,92 @@
   .headertag2 {
     bottom: 248px;
     left: 186px;
+  }
+}
+.ai-section {
+  .headerSection {
+    background: url("/images/aibg.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .headertag1 {
+    bottom: 73px;
+    left: 76px;
+  }
+  .headertag2 {
+    bottom: 153px;
+    left: 153px;
+  }
+  .headertag3 {
+    bottom: 292px;
+    left: 277px;
+  }
+  .headertag4 {
+    bottom: 203px;
+    right: 110px;
+  }
+  .headertag5 {
+    bottom: 95px;
+    right: 3px;
+  }
+  .headertag6 {
+    bottom: 275px;
+    left: -120px;
+  }
+}
+.news-section {
+  .headerSection {
+    background: url("/images/newsimg.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+.getStarted-section {
+  .headerSection {
+    background: url("/images/getstarted.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+.textTag {
+  .backDropStyle {
+    backdrop-filter: blur(55px);
+    background: rgba(255, 255, 255, 0.01);
+    filter: drop-shadow(0px 24px 44px rgba(0, 0, 0, 0.65));
+  }
+}
+.why-section {
+  .headerSection {
+    background: linear-gradient(305.47deg, #e14551 46.87%, #ff75b7 129.51%);
+    min-height: 100vh;
+  }
+  .whyCard {
+    min-height: 581px;
+  }
+  .imgInRound {
+    p img {
+      border-radius: 8px;
+    }
+  }
+  .whitespaceBreak {
+    white-space: normal;
+  }
+  .scrollCard {
+    margin-bottom: 2rem;
+    border: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .hideScrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hideScrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
